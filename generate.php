@@ -7,8 +7,10 @@ require 'config.php';
 $objUUID = uniqid($env . "_");
 $objStatus = true;
 
-#echo($objUUID);
-#echo("<br />");
+/* TODO
+  * Add validation to prevent random people from generating upload point
+  * Create directory for file to be stored in the $storage location
+*/
 
 #only used to generate JSON response
 $data = [
@@ -26,8 +28,6 @@ if ($conn->query($sql) === true){
   echo("Error: " . $sql . "<br>" . $conn->error);
 }
 
-#echo($sql);
-#echo("<br />");
 
 $conn->close();
 
