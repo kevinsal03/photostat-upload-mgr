@@ -20,12 +20,12 @@ if ($conn->query($sql) === true){
   #finally geneate the JSON object to return to client
   echo(json_encode($data));
 } else {
-  echo("Failed to update databse! Err: " . $conn->error;)
+  echo()"Error: " . $sql . "<br>" . $conn->error);
 }
 
 #echo($sql);
 #echo("<br />");
 
-
+$conn->close();
 
  ?>
