@@ -13,8 +13,6 @@ $conn = new mysqli($sqlsrv, $sqluser, $sqlpass, $sqldb);
 
 if (mysqli_connect_errno())
   {
-  echo($sqluser);
-  echo($sqlpass);
   die("Failed to connect to MySQL: " . mysqli_connect_error());
   }
 ?>
