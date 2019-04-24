@@ -6,7 +6,7 @@ require 'config.php'; #config variables
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PSUP Status Page</title>
+  <title>[<?php echo($env) ?>] PSUP Status Page</title>
 </head>
 <body>
   <h3>PSUP Satus</h3>
