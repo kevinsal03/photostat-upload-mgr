@@ -5,8 +5,8 @@ $storage = "/mount/disk1/psup/" . $env . "/"; #Main File Storage
 
 $sqldb = 'psup';
 $sqlsrv = 'localhost';
-$sqluser = trim(getenv('mysqluser'));
-$sqlpass = trim(getenv('mysqlpass'));
+
+require '/var/www/private/mysql_settings.php';
 
 // Create connection
 $conn = new mysqli($sqlsrv, $sqluser, $sqlpass, $sqldb);
