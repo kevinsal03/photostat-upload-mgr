@@ -1,6 +1,6 @@
 <?php
 #script for uploading new file
-inculde 'config.php'; #config variables
+require 'config.php'; #config variables
 
 ?>
 <!DOCTYPE html>
