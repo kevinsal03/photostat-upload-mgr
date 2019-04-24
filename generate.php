@@ -2,7 +2,7 @@
 require 'config.php';
 
 #create new file upload point
-$objUUID = uniqid($env)
+$objUUID = uniqid($env);
 
 echo($objUUID);
  ?>
