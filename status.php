@@ -13,7 +13,7 @@ require 'config.php'; #config variables
   <p>Environment: <?php echo($env)?></p>
   <p>Storage Location: <?php echo($storage)?></p>
   <? if ($env == 'prod') {
-    echo("<p>Production Build Time:" . <?php echo($prodBT)?> . "</p>")
+    echo("<p>Production Build Time:" . $prodBT . "</p>")
   } ?>
 </body>
 </html>
