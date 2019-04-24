@@ -20,7 +20,7 @@ if ($conn->query($sql) === true){
   #finally geneate the JSON object to return to client
   echo(json_encode($data));
 } else {
-  echo()"Error: " . $sql . "<br>" . $conn->error);
+  echo("Error: " . $sql . "<br>" . $conn->error);
 }
 
 #echo($sql);
