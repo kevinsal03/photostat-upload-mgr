@@ -2,6 +2,9 @@
 #Configuration Script
 $env = trim(file_get_contents('switches/env'));
 $storage = "/mount/disk1/psup/" . $env . "/"; #Main File Storage
+if ($env == 'prod') {
+  $prodBT = trim(file_get_contents('switches/prodbt'));
+}
 
 $sqldb = 'psup';
 $sqlsrv = 'localhost';
