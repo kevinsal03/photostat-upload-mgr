@@ -1,13 +1,16 @@
 <?php
 require 'config.php';
 
-#create new file upload point
+/*create new file upload point*/
+
+//gen the file UUID with prefix matching mode server is in
 $objUUID = uniqid($env . "_");
 $objStatus = true;
 
 #echo($objUUID);
 #echo("<br />");
 
+#only used to generate JSON response
 $data = [
   "uuid"=>$objUUID,
   "status"=>$objStatus
