@@ -11,7 +11,7 @@ echo("<br />");
 $data = [
   "uuid"=>$objUUID,
   "status"=>$objStatus
-]
+];
 
 $sql = "INSERT INTO " . $env . " (uuid, active, `created-at`)
 VALUES ('" . $objUUID . "'," . $objStatus . ", 'NOW()')";
