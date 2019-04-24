@@ -9,6 +9,11 @@ if ($env == 'prod') {
 $sqldb = 'psup';
 $sqlsrv = 'localhost';
 
+/* mysql_settings.php
+ * For File template see extras/mysql_settings.php
+ * File is used so my MySql (MariaDB) creds dont make it onto GitHub
+ * Feel free to replace this require with the variables used in that file.
+*/
 require '/var/www/private/mysql_settings.php';
 
 // Create connection
